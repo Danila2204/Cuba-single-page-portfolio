@@ -1,3 +1,6 @@
+// === variables ===
+$margin-sufety: 20px;
+// === / variables ===
 // === imports ===
 @import url(https://fonts.googleapis.com/css?family=Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900);
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
@@ -5,5 +8,77 @@
 // === global ===
 body {
     font-family: "Titillium Web" sans-serif;
+    margin: 0;
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    padding-left: $margin-sufety;
+    padding-right: $margin-sufety;
+}
+
+.button {
+    cursor: pointer;
+    transition: .5s;
+    font-size: 18px;
+    box-shadow: 0 3px rgba(0, 0, 0, .15);
+    width: clamp(173px, 20vw, 293px);
+    padding: 22px 0;
+    
+    &:hover {
+        box-shadow: 0 -3px rgba(0, 0, 0, .15);
+    }
 }
 // === / global ===
+// === header ===
+.header {
+    background: #87509C;
+
+    .container {
+        padding-top: 57px;
+        padding-bottom: 145px;
+    }
+
+    &__nav {
+        margin-bottom: 133px;
+
+        @media (max-width: 606px) {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-list {
+            margin-top: 20px;
+
+            li {
+                cursor: pointer;
+                padding: 4px 18px;
+                border-radius: 5px;
+                transition: .5s;
+
+                &:hover {
+                    background: #643A79;
+                }
+            }
+        }
+    }
+
+    &__content {
+        max-width: 910px;
+    }
+
+    &__button {
+        background: #EB7D4B;
+    }
+}
+
+h1 {
+    font-size: clamp(30px, 3vw, 42px);
+    margin-bottom: 25px;
+}
+// === / header ===
