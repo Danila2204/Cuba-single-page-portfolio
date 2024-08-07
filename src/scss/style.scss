@@ -34,6 +34,31 @@ h1, h2, h3, h4, h5, h6, p {
         box-shadow: 0 -3px rgba(0, 0, 0, .15);
     }
 }
+
+.title {
+    font-size: 40px;
+    margin-bottom: 20px;
+
+    &-second {
+        font-size: 24px;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 87px;
+        height: 4px;
+    }
+}
+
+.subtitle {
+    font-size: 18px;
+    max-width: 577px;
+
+    &-second {
+        max-width: 190px;
+    }
+}
 // === / global ===
 // === header ===
 .header {
@@ -82,3 +107,35 @@ h1 {
     margin-bottom: 25px;
 }
 // === / header ===
+// === services ===
+.services {
+    padding: 106px 0 122px;
+    background: #17C2A4;
+
+    &__text {
+        margin-bottom: 70px;
+    }
+
+    &__title {
+        &::after {
+            background: rgba(0, 0, 0, .15);
+        }
+    }
+
+    &__card {
+        height: 310px;
+
+        @media (max-width: 816px) {
+            &:not(:last-child) {
+                margin-bottom: $margin-sufety;
+            }
+        }
+
+        &-text{
+            .title-second {
+                margin-bottom: 12px;
+            }
+        }
+    }
+}
+// === / services ===
