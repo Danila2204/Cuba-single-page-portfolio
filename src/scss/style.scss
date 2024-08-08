@@ -147,6 +147,10 @@ h1 {
     background: #E7F1F8;
     color: #3C4761;
 
+    &__text {
+        margin-bottom: 75px;
+    }
+
     &__content {
         @media (max-width: 866px) {
             justify-content: space-evenly;
@@ -183,3 +187,33 @@ h1 {
     }
 }
 // === / team ===
+// === skills ===
+.skills {
+    padding: 105px 0 110px;
+    color: #3C4761;
+
+    &__text {
+        margin-bottom: 80px;
+    }
+
+    &__content {
+        @media (max-width: 705px) {
+            justify-content: space-evenly;
+        }
+
+        &-item {
+            @media (max-width: 696px) {
+                &:not(:last-child) {
+                    margin-bottom: $margin-sufety;
+                }
+            }
+
+            img {
+                width: 160px;
+                height: 160px;
+                margin-bottom: 25px;
+            }
+        }
+    }
+}
+// === / skills ===

@@ -119,6 +119,9 @@ h1 {
   background: #E7F1F8;
   color: #3C4761;
 }
+.team__text {
+  margin-bottom: 75px;
+}
 @media (max-width: 866px) {
   .team__content {
     justify-content: space-evenly;
@@ -141,4 +144,27 @@ h1 {
 }
 .team .title::after {
   background-color: rgba(189, 209, 223, 0.75);
+}
+
+.skills {
+  padding: 105px 0 110px;
+  color: #3C4761;
+}
+.skills__text {
+  margin-bottom: 80px;
+}
+@media (max-width: 705px) {
+  .skills__content {
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 696px) {
+  .skills__content-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.skills__content-item img {
+  width: 160px;
+  height: 160px;
+  margin-bottom: 25px;
 }
