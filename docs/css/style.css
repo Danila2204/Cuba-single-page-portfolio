@@ -269,3 +269,49 @@ h1 {
 .about-us__comment-description-proffesion {
   color: #FFDD99;
 }
+
+.touch {
+  padding: 115px 0 105px;
+  background-color: #3C5499;
+}
+.touch .title::after {
+  background-color: #273A71;
+}
+.touch .touch__form {
+  margin-top: 72px;
+  grid-template: "name email" 56px "textarea textarea" 200px/1fr 1fr;
+  grid-gap: 30px;
+}
+@media (max-width: 440px) {
+  .touch .touch__form {
+    grid-template: "name" 56px "email" 56px "textarea" 200px/1fr;
+  }
+}
+.touch .touch__form textarea {
+  background-color: #273A71;
+  grid-area: textarea;
+}
+.touch .touch__form textarea::placeholder {
+  padding: 15px 0 15px 23px;
+  color: #fff;
+  font-size: 18px;
+}
+.touch .touch__form-email {
+  grid-area: email;
+}
+.touch .touch__form-name {
+  grid-area: name;
+}
+.touch .touch__form input::placeholder {
+  padding: 15px 0 15px 23px;
+  color: #fff;
+  font-size: 18px;
+}
+.touch .touch__form input:not(:last-child) {
+  border-radius: 5px;
+  background-color: #273A71;
+}
+.touch .container .button {
+  margin-top: 60px;
+  background-color: #30BAE7;
+}

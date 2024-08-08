@@ -343,4 +343,69 @@ h1 {
         }
     }
 }
-// === / about-us ===
+// === touch ===
+.touch {
+    padding: 115px 0 105px;
+    background-color: #3C5499;
+
+    .title::after {
+        background-color: #273A71;
+    }
+
+    .touch__form {
+        margin-top: 72px;
+        grid-template:
+        "name email" 56px
+        "textarea textarea" 200px
+        / 1fr 1fr;
+        grid-gap: 30px;
+
+        @media (max-width: 440px) {
+            grid-template:
+            "name" 56px
+            "email" 56px
+            "textarea" 200px
+            / 1fr;
+        }
+
+        textarea {
+            background-color: #273A71;
+            grid-area: textarea;
+            
+            &::placeholder {
+                padding: 15px 0 15px 23px;
+                color: #fff;
+                font-size: 18px;
+            }
+        }
+
+        &-email {
+            grid-area: email;
+        }
+
+        &-name {
+            grid-area: name;
+        }
+
+        input {
+            &::placeholder {
+                padding: 15px 0 15px 23px;
+                color: #fff;
+                font-size: 18px;
+            }
+
+            &:not(:last-child) {
+                border-radius: 5px;
+                background-color: #273A71;
+            }
+        }
+    }
+
+    .container {
+        .button {
+            margin-top: 60px;
+            background-color: #30BAE7;
+        }
+    }
+}
+// === / touch ===
