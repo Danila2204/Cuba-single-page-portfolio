@@ -21,6 +21,7 @@ h1, h2, h3, h4, h5, h6, p {
   transition: 0.5s;
   font-size: 18px;
   box-shadow: 0 3px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
   width: clamp(173px, 20vw, 293px);
   padding: 22px 0;
 }
@@ -150,6 +151,9 @@ h1 {
   padding: 105px 0 110px;
   color: #3C4761;
 }
+.skills .title::after {
+  background: #DFE8ED;
+}
 .skills__text {
   margin-bottom: 80px;
 }
@@ -167,4 +171,57 @@ h1 {
   width: 160px;
   height: 160px;
   margin-bottom: 25px;
+}
+
+.portfolio {
+  padding: 107px 0 110px;
+  background-color: #FFDD99;
+  color: #393939;
+}
+.portfolio .container {
+  max-width: 1200px;
+}
+.portfolio .container .button {
+  background-color: #17C2A4;
+  color: #fff;
+}
+.portfolio .title::after {
+  background-color: #E5C37F;
+}
+.portfolio__content {
+  margin-bottom: 75px;
+}
+@media (max-width: 1138px) {
+  .portfolio__content-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.portfolio__content-item p {
+  margin-top: 27px;
+}
+.portfolio__nav {
+  margin: 37px 0 62px;
+}
+.portfolio__nav li {
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 5px 28px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.08);
+}
+.portfolio__nav li:not(:last-child) {
+  margin-right: clamp(0.1px, 1vw, 10px);
+}
+@media (max-width: 434.5px) {
+  .portfolio__nav li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 328px) and (min-width: 254px) {
+  .portfolio__nav li:last-child {
+    margin-bottom: 20px;
+  }
+}
+.portfolio__nav li:hover {
+  background-color: #fff;
 }

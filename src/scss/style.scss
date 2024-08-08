@@ -27,6 +27,7 @@ h1, h2, h3, h4, h5, h6, p {
     transition: .5s;
     font-size: 18px;
     box-shadow: 0 3px rgba(0, 0, 0, .15);
+    border-radius: 5px;
     width: clamp(173px, 20vw, 293px);
     padding: 22px 0;
     
@@ -192,6 +193,10 @@ h1 {
     padding: 105px 0 110px;
     color: #3C4761;
 
+    .title::after {
+        background: #DFE8ED;
+    }
+
     &__text {
         margin-bottom: 80px;
     }
@@ -217,3 +222,69 @@ h1 {
     }
 }
 // === / skills ===
+// === portfolio ===
+.portfolio {
+    padding: 107px 0 110px;
+    background-color: #FFDD99;
+    color: #393939;
+
+    .container {
+        max-width: 1200px;
+
+        .button {
+            background-color: #17C2A4;
+            color: #fff;
+        }
+    }
+
+    .title::after {
+        background-color: #E5C37F;
+    }
+
+    &__content {
+        margin-bottom: 75px;
+
+        &-item {
+            &:not(:last-child) {
+                @media (max-width: 1138px) {
+                    margin-bottom: $margin-sufety;
+                }
+            }
+
+            p {
+                margin-top: 27px;
+            }
+        }
+    }
+
+    &__nav {
+        margin: 37px 0 62px;
+
+        li {
+            cursor: pointer;
+            transition: .5s;
+            padding: 5px 28px;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, .08);
+
+            &:not(:last-child) {
+                margin-right: clamp(.1px, 1vw, 10px);
+
+                @media (max-width: 434.5px) {
+                    margin-bottom: $margin-sufety;
+                }
+            }
+
+            &:last-child {
+                @media (max-width: 328px) and (min-width: 254px) {
+                    margin-bottom: 20px;
+                }
+            }
+
+            &:hover {
+                background-color: #fff;
+            }
+        }
+    }
+}
+// === / portfolio ===
