@@ -288,6 +288,7 @@ h1 {
   }
 }
 .touch .touch__form textarea {
+  border-radius: 5px;
   background-color: #273A71;
   grid-area: textarea;
 }
@@ -314,4 +315,22 @@ h1 {
 .touch .container .button {
   margin-top: 60px;
   background-color: #30BAE7;
+}
+
+.footer {
+  padding: 38px 0;
+  background-color: #344B8E;
+}
+@media (max-width: 675.5px) {
+  .footer__nav li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
+.footer__nav li a {
+  transition: 0.5s;
+  font-weight: 600;
+  font-size: 24px;
+}
+.footer__nav li a:hover {
+  color: #30BAE7;
 }
