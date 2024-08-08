@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* === global === */
+.title {
+    @apply font-bold flex flex-col items-center
+}
+
+.title-second {
+    @apply font-bold
+}
+/* === / global === */
+/* === team === */
+.team__content-item {
+    @apply flex flex-col items-center
+}
+
+.team__content-item-socials {
+    @apply flex
+}
+
+.team__content-item {
+    @apply flex flex-col justify-between
+}
+/* === / team === */

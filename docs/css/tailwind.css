@@ -631,3 +631,38 @@ video {
 .uppercase {
   text-transform: uppercase;
 }
+
+/* === global === */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 700;
+}
+
+.title-second {
+  font-weight: 700;
+}
+
+/* === / global === */
+
+/* === team === */
+
+.team__content-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team__content-item-socials {
+  display: flex;
+}
+
+.team__content-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* === / team === */
