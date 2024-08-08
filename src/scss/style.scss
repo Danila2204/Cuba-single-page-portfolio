@@ -288,3 +288,59 @@ h1 {
     }
 }
 // === / portfolio ===
+// === about-us ===
+.about-us {
+    padding: 105px 0;
+    background-color: #D74680;
+
+    .title::after {
+        background-color: rgba(0, 0, 0, .15);
+    }
+
+    &__comments {
+        margin-top: 83px;
+    }
+
+    &__comment {
+        @media (max-width: 1028px) {
+            margin-bottom: $margin-sufety;
+        }
+
+        img {
+            align-self: start;
+            margin-right: 48px;
+        }
+
+        &-content {
+            justify-content: space-between;
+        }
+
+        &-item {
+            &:first-child {
+                margin-bottom: 100px;
+            }
+
+            @media (max-width: 1028px) {
+                justify-content: center;
+                &:first-child {       
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &-text {
+            font-style: italic;
+            font-size: 21px;
+            max-width: 342px;
+            margin-bottom: 32px;
+            text-align: left;
+        }
+
+        &-description {
+            &-proffesion {
+                color: #FFDD99;
+            }
+        }
+    }
+}
+// === / about-us ===

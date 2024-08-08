@@ -225,3 +225,47 @@ h1 {
 .portfolio__nav li:hover {
   background-color: #fff;
 }
+
+.about-us {
+  padding: 105px 0;
+  background-color: #D74680;
+}
+.about-us .title::after {
+  background-color: rgba(0, 0, 0, 0.15);
+}
+.about-us__comments {
+  margin-top: 83px;
+}
+@media (max-width: 1028px) {
+  .about-us__comment {
+    margin-bottom: 20px;
+  }
+}
+.about-us__comment img {
+  align-self: start;
+  margin-right: 48px;
+}
+.about-us__comment-content {
+  justify-content: space-between;
+}
+.about-us__comment-item:first-child {
+  margin-bottom: 100px;
+}
+@media (max-width: 1028px) {
+  .about-us__comment-item {
+    justify-content: center;
+  }
+  .about-us__comment-item:first-child {
+    margin-bottom: 0;
+  }
+}
+.about-us__comment-text {
+  font-style: italic;
+  font-size: 21px;
+  max-width: 342px;
+  margin-bottom: 32px;
+  text-align: left;
+}
+.about-us__comment-description-proffesion {
+  color: #FFDD99;
+}
